@@ -9,10 +9,10 @@ function Contact() {
     e.preventDefault();
     try {
       await axios.post("http://localhost:5000/api/contact", form);
-      toast.success("✅ Email sent successfully!");
+      toast.success("Email sent successfully!");
       setForm({ name: "", email: "", message: "" }); // clear form
     } catch (err) {
-      toast.error("❌ Error sending email");
+      toast.error(" Error sending email");
     }
   };
 
